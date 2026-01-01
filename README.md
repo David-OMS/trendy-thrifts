@@ -2,7 +2,7 @@
 
 A complete order and inventory management system built for a small e-commerce business. This project solves real operational challenges through automation, real-time tracking, and data-driven insights.
 
-## The Problem
+## Chalenge
 
 Trendy Thrifts operates across four sales channels: their website, Instagram, WhatsApp, and Facebook. While this multi-channel approach helps reach more customers, it created significant operational challenges.
 
