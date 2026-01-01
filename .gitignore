@@ -1,0 +1,31 @@
+# Google Sheets credentials
+credentials.json
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!vite.config.ts
+
+# Environment variables
+.env
+.env.local
+
+# Data files (keep private)
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Implementation details (keep private)
+database/sync-service.js
+database/migrate.js
+database/export-processed.js
+scripts/
+
+# Build artifacts
+node_modules/
+form-frontend/node_modules/
+react-dashboard/node_modules/
+form-frontend/dist/
+*.log
+

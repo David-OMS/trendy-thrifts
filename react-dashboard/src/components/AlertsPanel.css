@@ -1,0 +1,98 @@
+.alerts-card {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  padding: 24px;
+}
+
+.alerts-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 20px 0;
+}
+
+.alerts-scroll {
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 8px;
+}
+
+.alerts-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.alerts-scroll::-webkit-scrollbar-track {
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 3px;
+}
+
+.alerts-scroll::-webkit-scrollbar-thumb {
+  background: rgba(139, 92, 246, 0.4);
+  border-radius: 3px;
+}
+
+.alerts-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.6);
+}
+
+.no-alerts {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.alert-item {
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  transition: all 0.3s;
+}
+
+.alert-item:hover {
+  transform: scale(1.02);
+}
+
+.alert-icon-container {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.alert-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.alert-message {
+  font-size: 12px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 4px;
+  line-height: 1.5;
+}
+
+.alert-product {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7280;
+}

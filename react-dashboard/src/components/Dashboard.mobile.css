@@ -1,0 +1,67 @@
+/* Mobile-optimized styles for Dashboard */
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 1rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+
+  .header-left {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .header-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-title {
+    font-size: 1.75rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.75rem;
+    margin-left: 40px;
+  }
+
+  .home-link {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  .home-link span {
+    display: none; /* Hide text, show icon only */
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .filters-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .filter-group {
+    width: 100%;
+  }
+
+  .filter-group select {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,79 @@
+/* Mobile-optimized styles for ProductGrid */
+
+@media (max-width: 768px) {
+  .product-grid-full-page {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .product-selection-compact {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .product-selection-compact h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .products-grid-compact {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .product-card {
+    padding: 1rem 0.75rem;
+    min-height: 100px;
+  }
+
+  .product-name {
+    font-size: 0.875rem;
+  }
+
+  .product-stock {
+    font-size: 0.75rem;
+  }
+
+  .order-details-panel-compact {
+    position: relative;
+    top: auto;
+    width: 100%;
+    padding: 1.5rem;
+    max-height: none;
+  }
+
+  .form-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .channel-grid,
+  .quantity-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .channel-grid button,
+  .quantity-grid button {
+    padding: 0.625rem;
+    font-size: 0.8125rem;
+  }
+
+  .submit-order-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .pagination {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .page-btn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+}
+

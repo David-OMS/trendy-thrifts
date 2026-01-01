@@ -1,0 +1,14 @@
+.App {
+  min-height: 100vh;
+  background: #f5f7fa;
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+

@@ -1,0 +1,71 @@
+.channel-chart {
+  width: 100%;
+}
+
+.channel-tooltip {
+  background: rgba(17, 24, 39, 0.95);
+  color: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  backdrop-filter: blur(8px);
+}
+
+.tooltip-label {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  opacity: 0.9;
+}
+
+.tooltip-value {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.channel-legend {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+}
+
+.legend-content {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legend-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.legend-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Make chart labels bolder */
+.recharts-cartesian-axis-tick-value {
+  font-weight: 700 !important;
+}

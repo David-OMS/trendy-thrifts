@@ -1,0 +1,41 @@
+/* Mobile-optimized styles for AlertsPanel */
+
+@media (max-width: 768px) {
+  .alerts-panel {
+    padding: 1rem;
+  }
+
+  .alerts-panel h3 {
+    font-size: 1.125rem;
+  }
+
+  .alert-item {
+    padding: 0.75rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .alert-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .alert-type {
+    font-size: 0.875rem;
+  }
+
+  .alert-severity {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.6875rem;
+  }
+
+  .alert-message {
+    font-size: 0.8125rem;
+  }
+
+  .alert-action {
+    font-size: 0.75rem;
+  }
+}
+

@@ -1,0 +1,31 @@
+.revenue-chart {
+  width: 100%;
+}
+
+.chart-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 20px 0;
+}
+
+.chart-tooltip {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 12px;
+  padding: 8px 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* Make chart axis labels bolder */
+.recharts-cartesian-axis-tick-value {
+  font-weight: 700 !important;
+}
