@@ -1,4 +1,8 @@
-# Trendy Thrifts - Order & Inventory Management System
+# Trendy Thrifts
+
+## 🚀 Live Demo
+
+**Live Application:** [https://trendy-thrifts-vercel.vercel.app/](https://trendy-thrifts-vercel.vercel.app/) - Order & Inventory Management System
 
 A complete order and inventory management system built for a small e-commerce business. This project solves real operational challenges through automation, real-time tracking, and data-driven insights.
 
