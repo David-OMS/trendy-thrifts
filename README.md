@@ -175,7 +175,7 @@ Background Sync Service (async)
 
 Experience the system in action:
 
-**[Try the Live Demo →](https://your-demo-link.com)**
+**[Try the Live Demo →](https://trendy-thrifts-vercel.vercel.app/)**
 
 The demo includes:
 - Full order entry form with stock validation
