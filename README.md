@@ -4,7 +4,7 @@
 
 **Live Application:** [https://trendy-thrifts-vercel.vercel.app/](https://trendy-thrifts-vercel.vercel.app/) - Order & Inventory Management System
 
-## Chalenge
+## Challenge
 
 Trendy Thrifts operates across four sales channels: their website, Instagram, WhatsApp, and Facebook. While this multi-channel approach helps reach more customers, it created significant operational challenges.
 
