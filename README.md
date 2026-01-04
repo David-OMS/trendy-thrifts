@@ -39,7 +39,7 @@ I built a database-first system that automates order processing, inventory track
 ### Architecture
 
 **Database Layer**
-The system uses SQLite as the primary data store. All orders and inventory updates write to the database first, ensuring fast performance and data integrity. The database serves as the single source of truth.
+The system was originally built locally using SQLite for fast development and zero-configuration setup. After successful local development and testing, it was deployed to production using PostgreSQL (via Neon) for scalability and reliability. All orders and inventory updates write to the database first, ensuring fast performance and data integrity. The database serves as the single source of truth.
 
 **Processing Pipeline**
 Python scripts run automatically in the background, processing raw order data to calculate:
@@ -110,19 +110,20 @@ Analytics are displayed in a React dashboard, updated asynchronously as orders a
 ## Technical Implementation
 
 **Technology Stack**
-- Backend: Node.js with Express for the API server
-- Database: SQLite for fast, reliable data storage
+- Backend: Node.js with Express (local) / Vercel Serverless Functions (production)
+- Database: PostgreSQL via Neon (production) / SQLite (local development)
 - Frontend: React with TypeScript for the form and dashboard
 - Data Processing: Python with pandas for analytics
 - Cloud Integration: Google Sheets API for remote access
+- Deployment: Vercel for hosting and serverless functions
 
 **System Flow**
 ```
 Order Entry (React Form)
     ↓
-API (Node.js / Express) - instant write
+API (Node.js / Express / Vercel Serverless) - instant write
     ↓
-SQLite Database (source of truth)
+Database (PostgreSQL production / SQLite local) - source of truth
     ↓
 Background Sync Service (async)
     ├─→ CSV Files (for Python scripts)
@@ -137,10 +138,11 @@ Background Sync Service (async)
 **Design Decisions & Tradeoffs**
 
 **Database-First Architecture**
-- SQLite chosen for simplicity and reliability at current scale
+- Originally developed with SQLite for fast local development and zero-configuration setup
+- Migrated to PostgreSQL (Neon) for production deployment to ensure scalability and reliability
+- Same schema works for both databases, allowing seamless transition from local development to production
 - All writes go to database first for speed and data integrity
 - Background sync to CSV/Sheets doesn't block operations
-- Can scale to PostgreSQL or other databases if higher concurrency is needed
 
 **Manual Order Entry vs Channel Automation**
 - Button-based UI keeps workflows familiar for staff
